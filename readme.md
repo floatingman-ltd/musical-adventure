@@ -35,6 +35,6 @@ This means that the test-in-on needs to be deployed to _nuget_.
 
 ## Sources
 
-- [How to create you own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)
-- [Custom Templates](https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates)
 - [Tutorial - Create template package](https://docs.microsoft.com/en-us/dotnet/core/tutorials/cli-templates-create-template-package)
+- [Custom Templates](https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates)
+- [How to create you own templates for dotnet new](https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/)

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace AsConsole;
 
-// needs to be a public class
+// needs to be a public class for the embedded tests to be detected
 public class Program
 {
     static void Main(string[] args)
@@ -18,16 +18,17 @@ public class Program
     [Fact]
     public void HelloWorldTest()
     {
+        // capture the console output
+        var console = Console.Out;
         var sw = new StringWriter();
         Console.SetOut(sw);
 
         Program.Main(Array.Empty<string>());
-        // not for console writeline - it needs the '\n'
-        sw.ToString().Should().Be("Hello World!\n");
+        sw.ToString().Should().Be($"Hello World!{Environment.NewLine}");
 
+        // reset the console
+        Console.SetOut(console);
     }
 
 #endif
-
 }
-
